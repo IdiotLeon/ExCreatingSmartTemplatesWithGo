@@ -17,7 +17,10 @@ func (p Product) PriceWithTax() float32 {
 }
 
 const templateString = `
-{{- "Item Information" -}}
+{{- "Item Information"}}
+Name: {{.Name}}
+Price: {{.Price}}
+Price with Tax: {{.PriceWithTax}}
 `
 
 func main() {
